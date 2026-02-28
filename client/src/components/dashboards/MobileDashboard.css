@@ -1,0 +1,591 @@
+/* Modern Mobile Dashboard Styles */
+
+.mobile-dashboard {
+  background: linear-gradient(180deg, #ff4757 0%, #ff6b81 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-rectangle-wrapper {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.avatar-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff4757;
+}
+
+.nav-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.greeting-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.user-name {
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
+
+.logout-icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* User Credentials Card */
+.user-credentials-card {
+  margin: 20px 24px;
+  background: white;
+  border: 2px solid #ff4757;
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 12px rgba(255, 71, 87, 0.15);
+}
+
+.credential-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.credential-row:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cred-icon {
+  flex-shrink: 0;
+}
+
+.cred-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  min-width: 80px;
+}
+
+.cred-value {
+  font-size: 14px;
+  color: #666;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mobile-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 24px 24px 24px;
+}
+
+.health-card-main {
+  background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+  border-radius: 20px;
+  padding: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 20px rgba(255, 71, 87, 0.25);
+}
+
+.health-badge {
+  margin-bottom: 16px;
+}
+
+.pulse-icon {
+  animation: heartbeat 1.5s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(255, 71, 87, 0.3));
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  10%, 30% { transform: scale(1.1); }
+  20%, 40% { transform: scale(1); }
+}
+
+.main-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.main-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+}
+
+/* Risk Card */
+.risk-card-beautiful {
+  background: white;
+  border-radius: 24px;
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.risk-top {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.risk-label-text {
+  font-size: 14px;
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.risk-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.circular-progress {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+.circular-progress svg {
+  transform: rotate(-90deg);
+}
+
+.progress-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.risk-score-num {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1;
+}
+
+.risk-level-text {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.risk-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.update-text {
+  font-size: 13px;
+  color: #999;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 28px 0 16px 0;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+  border-radius: 12px;
+}
+
+.section-header svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.section-title-new {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Modern Parameters Grid */
+.params-grid-modern {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.param-modern {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.param-modern:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.param-modern.left {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.param-modern.right {
+  animation: slideInRight 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.param-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.param-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.status-dot.badge-normal {
+  background: #4CAF50;
+}
+
+.status-dot.badge-warning {
+  background: #FF9800;
+}
+
+.status-dot.badge-danger {
+  background: #f44336;
+}
+
+.param-name {
+  font-size: 12px;
+  color: #999;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.param-digits {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.param-metric {
+  font-size: 13px;
+  color: #999;
+  font-weight: 500;
+}
+
+/* Modern Recommendations */
+.recommendations-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.rec-modern {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.rec-modern:hover {
+  transform: translateX(4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.rec-icon-wrap {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rec-content {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 6px;
+}
+
+/* Modern Action Buttons */
+.action-btns-modern {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.modern-btn {
+  padding: 16px 20px;
+  border: none;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.modern-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.modern-btn:hover svg {
+  transform: scale(1.1);
+}
+
+.modern-btn.primary-modern {
+  background: white;
+  color: #ff4757;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.modern-btn.primary-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.modern-btn.secondary-modern {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.modern-btn.secondary-modern:hover {
+  background: white;
+  color: #ff4757;
+  border-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .mobile-container {
+    padding: 0 16px;
+  }
+
+  .health-card-main {
+    padding: 20px;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  .risk-card-beautiful {
+    padding: 20px;
+  }
+
+  .circular-progress {
+    width: 140px;
+    height: 140px;
+  }
+
+  .risk-score-num {
+    font-size: 40px;
+  }
+
+  .params-grid-modern {
+    gap: 12px;
+  }
+
+  .param-modern {
+    padding: 16px;
+  }
+
+  .param-digits {
+    font-size: 28px;
+  }
+
+  .action-btns-modern {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Loading Animation */
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(180deg, #ff4757 0%, #ff6b81 100%);
+}
+
+.loading::after {
+  content: "";
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive for Rectangle Layout */
+@media (max-width: 1024px) {
+  .dashboard-rectangle-wrapper {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-dashboard {
+    padding: 20px 10px;
+  }
+  
+  .dashboard-rectangle-wrapper {
+    border-radius: 16px;
+  }
+  
+  .user-credentials-card {
+    margin: 16px;
+  }
+  
+  .mobile-container {
+    padding: 0 16px 16px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-dashboard {
+    padding: 10px 5px;
+  }
+  
+  .dashboard-rectangle-wrapper {
+    border-radius: 12px;
+  }
+  
+  .user-credentials-card {
+    padding: 12px 16px;
+  }
+  
+  .cred-label {
+    font-size: 12px;
+    min-width: 70px;
+  }
+  
+  .cred-value {
+    font-size: 12px;
+  }
+}
